@@ -13,8 +13,7 @@ import { Feather as Icon, AntDesign as Icon2 } from "@expo/vector-icons";
 
 export default function App() {
   useEffect(() => {
-    StatusBar.setBackgroundColor("#09214f");
-    StatusBar.setBarStyle("white");
+    StatusBar.setBarStyle("light-content", true);
   }, []);
   return (
     <View style={styles.container}>
@@ -236,7 +235,7 @@ const styles = StyleSheet.create({
   tenderingView: {
     display: "flex",
     flexDirection: "row",
-    marginTop: 24,
+    marginTop: 60,
     paddingHorizontal: 16,
     alignItems: "center",
   },
@@ -252,7 +251,7 @@ const styles = StyleSheet.create({
   trendingCard: {
     height: 280,
     width: 200,
-    marginTop: 32,
+    marginTop: 48,
     marginHorizontal: 16,
   },
   trendingImage: {
